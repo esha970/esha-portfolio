@@ -413,6 +413,19 @@
   @media (max-width: 480px) {
     .netmon-metrics { grid-template-columns: 1fr; }
     .tools-grid { grid-template-columns: 1fr; }
+
+    .netmon-metric .v {
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    .netmon-metric.wide {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .netmon-metric.wide .v { width: 100%; }
   }
 
   /* ---------- Utility ---------- */
@@ -1424,4 +1437,3 @@
 </script>
 </body>
 </html>
-
